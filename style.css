@@ -1,0 +1,152 @@
+/* ==========================
+   Fonts
+========================== */
+@font-face {
+  font-family: "Vazir";
+  src:
+    url("font/vazir-font-v16.1.0/Vazir.ttf") format("truetype"),
+    url("font/vazir-font-v16.1.0/Vazir.woff") format("woff");
+}
+/* ==========================
+   Reset
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 100;
+}
+/* ==========================
+   Base Styles
+========================== */
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: Vazir;
+  background-color: #010519;
+}
+/* ==========================
+   Header
+========================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 10px;
+  z-index: 20;
+  margin-top: 10px;
+  padding: 5px 10px;
+  overflow: hidden;
+  border-radius: 45px;
+  background-color: #010519;
+  box-shadow: 0 0 2px #ebebeb;
+}
+/* ==========================
+   Logo Section
+========================== */
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: #fff;
+  text-align: center;
+}
+/* Logo Text */
+.header__logo__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__logo h2 {
+  font-size: 17px;
+  font-weight: bold;
+  cursor: default;
+  transition: 0.5s;
+}
+.header__logo h2:hover {
+  color: #b307b6;
+}
+.header__logo p {
+  font-size: 8px;
+  cursor: default;
+}
+/* Logo Icon */
+.header__logo__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.header__logo__icon i {
+  font-size: 25px;
+  color: #fff;
+  transition: 0.5s;
+}
+.header__logo__icon i:hover {
+  color: #b307b6;
+  transform: scale(1.1);
+}
+/* ==========================
+   Navigation
+========================== */
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+.header__nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.header__nav li {
+  margin: 0 13px;
+  padding: 10px;
+  border-radius: 45px;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.header__nav li:hover {
+  background-color: #8b2c8d;
+  transform: scale(1.1);
+}
+/* Mobile Menu Icon */
+.header__nav i {
+  display: none;
+}
+/* ==========================
+   Actions
+========================== */
+.header__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 45px;
+  background: linear-gradient(to right, #4c059d, #b307b6);
+  transition: 0.5s;
+}
+.header__actions:hover {
+  transform: scale(1.1);
+}
+.header__actions a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+}
+.header__actions i {
+  color: #fff;
+  font-size: 16px;
+}
