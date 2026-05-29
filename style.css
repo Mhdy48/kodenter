@@ -289,3 +289,117 @@ body {
     flex: 32%;
   }
 }
+/* ==========================
+   Hero Layout
+========================== */
+.hero__content {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+/* ==========================
+   Hero Content
+========================== */
+.hero__info {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* ==========================
+   Hero Badge
+========================== */
+.hero__title-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 5px 15px;
+  cursor: default;
+  border-radius: 25px;
+  font-size: 14px;
+  background-color: #300f66;
+  box-shadow: 3px 3px 0 0 #fff;
+}
+.hero__title-top i {
+  margin-left: 8px;
+}
+/* ==========================
+   Hero Main Title
+========================== */
+.hero__title-main {
+  width: 60%;
+  margin: 15px 0;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+}
+.hero__title-main span {
+  color: #7f09d3;
+  font-weight: 900;
+}
+/* ==========================
+   Hero Description
+========================== */
+.hero__description {
+  width: 60%;
+  text-align: center;
+  font-size: 13px;
+}
+/* ==========================
+   Hero Buttons
+========================== */
+.hero__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+.hero__buttons a {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 20px;
+  padding: 8px 13px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 45px;
+  font-size: 14px;
+  font-weight: 900;
+  background: linear-gradient(to right, #4c059d, #b307b6);
+  box-shadow: 3px 3px 0 0 #fff;
+  transition: 0.5s;
+}
+.hero__buttons a:last-child {
+  margin-left: 0;
+}
+.hero__buttons a:hover {
+  transform: scale(0.9);
+}
+/* Button Icon */
+.hero__buttons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  color: #300f66;
+  border-radius: 50%;
+  background-color: #fff;
+}
+/* ==========================
+   Hero Image
+========================== */
+.hero__image {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__image img {
+  width: 100%;
+}
