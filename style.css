@@ -38,7 +38,8 @@ body {
   padding: 5px 10px;
   overflow: hidden;
   border-radius: 45px;
-  background-color: #010519;
+  background-color: rgba(1, 5, 25, 0.5);
+  backdrop-filter: blur(5px);
   box-shadow: 0 0 2px #ebebeb;
 }
 /* ==========================
