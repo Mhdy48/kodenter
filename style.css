@@ -567,3 +567,76 @@ body {
     width: 75%;
   }
 }
+/* ==========================
+   Features Grid Layout
+========================== */
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 10px 15px;
+  gap: 20px;
+}
+/* ==========================
+   Feature Card
+========================== */
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  gap: 8%;
+  color: #fff;
+  border-radius: 15px;
+  background-color: #071127;
+  box-shadow: 0 0 5px rgba(255, 255, 255, .1);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s;
+}
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+/* ==========================
+   Feature Icon
+========================== */
+.feature-card__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  padding: 7px 10px;
+  font-size: 35px;
+  border-radius: 20px;
+}
+/* Award Icon */
+.fa-award {
+  background: linear-gradient(102deg, #cea900, #068511);
+}
+/* Laptop Icon */
+.fa-laptop-code {
+  background: linear-gradient(271deg, #b61074, #cc1010);
+}
+/* Comment Icon */
+.fa-comment {
+  background: linear-gradient(166deg, #32b4aa, #1f57b8);
+}
+/* Graduation Icon */
+.fa-graduation-cap {
+  background: linear-gradient(139deg, #515208, #043720);
+}
+/* ==========================
+   Feature Title
+========================== */
+.feature-card__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* ==========================
+   Feature Description
+========================== */
+.feature-card__description {
+  color: #d0cece;
+  text-align: center;
+  font-size: 12px;
+}
