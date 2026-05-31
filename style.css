@@ -273,11 +273,11 @@ body {
   /* Header Layout */
   .header__logo {
     order: 2;
-    flex: 65%;
+    flex: 56%;
   }
   .header__nav {
     order: 1;
-    flex: 10%;
+    flex: 24%;
     justify-content: flex-start;
   }
   .header__actions {
@@ -298,13 +298,19 @@ body {
 ========================== */
 @media (max-width: 450px) {
   .header__logo {
-    flex: 58%;
+    flex: 45%;
   }
   .header__nav {
-    flex: 10%;
+    flex: 25%;
   }
   .header__actions {
-    flex: 32%;
+    flex: 30%;
+  }
+  .header__actions a{
+    margin-right: 0;
+  }
+  .header__actions i{
+    display: none;
   }
 }
 /* ==========================
