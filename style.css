@@ -589,7 +589,7 @@ body {
   color: #fff;
   border-radius: 15px;
   background-color: #071127;
-  box-shadow: 0 0 5px rgba(255, 255, 255, .1);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   transition: all 0.5s;
 }
@@ -639,4 +639,111 @@ body {
   color: #d0cece;
   text-align: center;
   font-size: 12px;
+}
+/* ==========================
+   Statistics Section
+========================== */
+.statistics {
+  display: flex;
+  justify-content: center;
+}
+/* ==========================
+   Statistics Grid Layout
+========================== */
+.statistics__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  width: 80%;
+  gap: 20px;
+  margin: 50px 0;
+  padding: 10px 20px;
+  color: #fff;
+}
+/* ==========================
+   Statistic Card
+========================== */
+.stat-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 45px;
+  border-radius: 15px;
+  background-color: #e1e7e7;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+}
+/* ==========================
+   Statistic Content
+========================== */
+.stat-item__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Statistic Number */
+.stat-item__number {
+  direction: ltr;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/* Statistic Label */
+.stat-item__label {
+  color: #4c4848;
+  font-size: 12px;
+  font-weight: 900;
+  text-align: center;
+}
+/* ==========================
+   Statistic Icon
+========================== */
+.stat-item__icon {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.stat-item__icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.stat-item__icon i:hover {
+  transform: scale(1.1);
+}
+/* ==========================
+   Statistic Number Colors
+========================== */
+.stat-card:nth-child(1) .stat-item__number {
+  color: #c5141a;
+}
+.stat-card:nth-child(2) .stat-item__number {
+  color: #31a711;
+}
+.stat-card:nth-child(3) .stat-item__number {
+  color: #ac0d5a;
+}
+.stat-card:nth-child(4) .stat-item__number {
+  color: #5b057d;
+}
+/* ==========================
+   Statistic Icon Colors
+========================== */
+.stat-card:nth-child(1) .stat-item__icon i {
+  background-color: #c5141a;
+  box-shadow: 0 0 11px #c5141a;
+}
+.stat-card:nth-child(2) .stat-item__icon i {
+  background-color: #31a711;
+  box-shadow: 0 0 11px #31a711;
+}
+.stat-card:nth-child(3) .stat-item__icon i {
+  background-color: #ac0d5a;
+  box-shadow: 0 0 11px #ac0d5a;
+}
+.stat-card:nth-child(4) .stat-item__icon i {
+  background-color: #5b057d;
+  box-shadow: 0 0 11px #5b057d;
 }
