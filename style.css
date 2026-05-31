@@ -751,7 +751,7 @@ body {
    Courses Section
 ========================== */
 .courses {
-  padding: 40px 15px;
+  padding: 40px 15px 80px;
   color: #fff;
 }
 /* ==========================
@@ -848,4 +848,206 @@ body {
 }
 .course-card .btn:hover {
   transform: scale(1.02);
+}
+/* ==========================
+   Footer Section
+========================== */
+.footer {
+  padding: 30px 15px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+.footer li {
+  list-style-type: none;
+}
+/* ==========================
+   Footer Layout
+========================== */
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1.2fr;
+  gap: 50px;
+  padding-bottom: 30px;
+}
+/* ==========================
+   Brand Area
+========================== */
+.footer__logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer__logo i {
+  font-size: 22px;
+  margin-right: 10px;
+  transition: 0.5s ease;
+}
+.footer__logo i:hover {
+  transform: scale(1.2);
+  color: #b307b6;
+}
+.footer__description {
+  max-width: 280px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #a09e9e;
+}
+/* ==========================
+   Footer Titles
+========================== */
+.footer__title {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+/* ==========================
+   Navigation Lists
+========================== */
+.footer__list,
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer__list li a,
+.footer__info li {
+  font-size: 14px;
+  text-decoration: none;
+  color: #a09e9e;
+  transition: 0.4s ease;
+}
+.footer__list li a:hover {
+  padding-right: 6px;
+}
+/* ==========================
+   Social Media Links
+========================== */
+.footer__socials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 10px;
+}
+.footer__social {
+  font-size: 25px;
+  color: #a09e9e;
+  transition: 0.4s ease;
+}
+.footer__social:hover {
+  transform: translateY(-3px);
+  color: #fff;
+}
+/* ==========================
+   Newsletter Content
+========================== */
+.footer__text {
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #a09e9e;
+}
+/* ==========================
+   Newsletter Form
+========================== */
+.footer__form {
+  position: relative;
+}
+.footer__form input {
+  width: 90%;
+  height: 30px;
+  padding: 0 20px;
+  padding-left: 70px;
+  outline: none;
+  overflow: hidden;
+  border: 1px solid #6e6f75;
+  border-radius: 14px;
+  color: #fff;
+  font-family: Vazir;
+  background-color: #010519;
+  caret-color: #fff;
+  transition: 0.4s ease;
+}
+.footer__form input::placeholder {
+  font-family: Vazir;
+  color: #a09e9e;
+}
+.footer__form input:focus {
+  border-color: #a09e9e;
+}
+.footer__form button {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* ==========================
+   Footer Copyright
+========================== */
+.footer__bottom {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+/* ==========================
+   Tablet Devices
+========================== */
+@media (max-width: 1100px) {
+  .footer__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .footer__brand,
+  .footer__links,
+  .footer__courses,
+  .footer__contact,
+  .footer__newsletter {
+    text-align: center;
+  }
+  .footer__logo {
+    justify-content: center;
+  }
+  .footer__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__socials {
+    justify-content: center;
+  }
+}
+/* ==========================
+   Small Tablets
+========================== */
+@media (max-width: 768px) {
+  .footer__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+/* ==========================
+   Mobile Devices
+========================== */
+@media (max-width: 576px) {
+  .footer__wrapper {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .footer__description {
+    max-width: 100%;
+  }
+  .footer__form input {
+    width: 100%;
+  }
+  .footer__bottom {
+    font-size: 13px;
+  }
 }
