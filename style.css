@@ -700,6 +700,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
 }
 /* Statistic Number */
 .stat-item__number {
